@@ -44,7 +44,7 @@ def check_name(screen_name):
         return "error: %s" % (e.code,)
 
 def print_result(screen_name, msg):
-    display = "[%s] %s %s\n"
+    display = "[%s] @%s %s\n"
     if "available" in msg:
         sys.stdout.write(display % ("+", screen_name, msg,))
     elif "error" in msg:
